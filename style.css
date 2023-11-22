@@ -1,4 +1,66 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Merriweather", serif;
   /* font-family: "Oswald", sans-serif; */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+  font-size: 3rem;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100vw;
+  height: 50rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  text-align: center;
+}
+
+.slide img {
+  display: none;
+  height: 40rem;
+}
+
+.slide img.active {
+  display: inline-block;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  /* margin-top: 13rem; */
+}
+
+.prev {
+  position: relative;
+  /* margin-right: -4.5rem; */
+  z-index: 100;
+}
+
+.next {
+  position: relative;
+  /* margin-left: -4.5rem; */
+  z-index: 100;
 }
